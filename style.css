@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+/*main contant split left and right*/
+.login-container{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    flex: 1;
+    background-image: url(./images/nature-3082832.jpg);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.left .logo{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left .logo img{
+    height: 50px;
+}
+.left .logo h1{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+.credit{
+    position: absolute;
+    font-size: 0.8rem;
+    bottom: 10px;
+    color: #fff;
+   
+}
+
+/* Right side (form) */
+.right{
+    flex: 1.5;
+    padding: 40px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    flex-direction: column;
+    border:1px;
+}
+
+.intro{
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+form h2{
+    margin-bottom: 20px;
+}
+
+.form-row{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.input-group{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label{
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group input:focus{
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.btn{
+    margin-top:20px ;
+    background-color: #4CAF50;
+    
+    font-size: 1rem;
+    padding: 12px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #45a049;
+}
+
+.login{
+    margin-top: 15px;
+}
+
+.login a{
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login a:hover{
+    text-decoration:underline;
+    color:black;
+}
